@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DBSportStoreModelStoreContainer" CdmEntityContainer="DBSportStoreEntities">
+    <EntitySetMapping Name="AdminUsers">
+      <EntityTypeMapping TypeName="DBSportStoreModel.AdminUser">
+        <MappingFragment StoreEntitySet="AdminUser">
+          <ScalarProperty Name="PasswordUser" ColumnName="PasswordUser" />
+          <ScalarProperty Name="RoleUser" ColumnName="RoleUser" />
+          <ScalarProperty Name="NameUser" ColumnName="NameUser" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="DBSportStoreModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="NameCate" ColumnName="NameCate" />
+          <ScalarProperty Name="IDCate" ColumnName="IDCate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="DBSportStoreModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="EmailCus" ColumnName="EmailCus" />
+          <ScalarProperty Name="PhoneCus" ColumnName="PhoneCus" />
+          <ScalarProperty Name="NameCus" ColumnName="NameCus" />
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderDetails">
+      <EntityTypeMapping TypeName="DBSportStoreModel.OrderDetail">
+        <MappingFragment StoreEntitySet="OrderDetail">
+          <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="IDOrder" ColumnName="IDOrder" />
+          <ScalarProperty Name="IDProduct" ColumnName="IDProduct" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OrderProes">
+      <EntityTypeMapping TypeName="DBSportStoreModel.OrderPro">
+        <MappingFragment StoreEntitySet="OrderPro">
+          <ScalarProperty Name="AddressDeliverry" ColumnName="AddressDeliverry" />
+          <ScalarProperty Name="IDCus" ColumnName="IDCus" />
+          <ScalarProperty Name="DateOrder" ColumnName="DateOrder" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Products">
+      <EntityTypeMapping TypeName="DBSportStoreModel.Product">
+        <MappingFragment StoreEntitySet="Products">
+          <ScalarProperty Name="ImagePro" ColumnName="ImagePro" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="DecriptionPro" ColumnName="DecriptionPro" />
+          <ScalarProperty Name="NamePro" ColumnName="NamePro" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

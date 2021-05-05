@@ -1,0 +1,29 @@
+﻿@model DemoDB2.Models.AdminUser
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .field-validation-error {
+        color: red;
+    }
+</style>
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "LoginUser", new { @class = "field-validation-error" }))
+{
+    <p>@Html.LabelFor(model => model.ID)</p>
+    <p>@Html.EditorFor(model => model.ID)</p>
+
+    <p>@Html.ValidationMessageFor(model => model.ID)</p>
+
+    <p>@Html.LabelFor(model => model.PasswordUser)</p>
+    <p>@Html.EditorFor(model => model.PasswordUser)</p>
+
+    <p>@Html.ValidationMessageFor(model => model.PasswordUser)</p>
+    if (ViewBag.ErrorInfo != null)
+    { <p>@ViewBag.ErrorInfo</p>}
+<p><input type="submit" value="Login" /></p>
+
+}
+<p><button>@Html.ActionLink("Register", "RegisterUser")</button></p>
